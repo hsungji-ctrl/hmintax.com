@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>세무회계 해민</title>
+<meta name="description" content="의정부 고산동 세무회계 해민, 대표세무사 백민희. 계약 전에 대표 세무사가 직접 만나고, 신고서는 대표 세무사가 직접 검토합니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Gowun+Dodum&display=swap">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="세무회계 해민">
+<meta property="og:title" content="세무회계 해민">
+<meta property="og:description" content="의정부 고산동 세무회계 해민, 대표세무사 백민희. 계약 전에 대표 세무사가 직접 만나고, 신고서는 대표 세무사가 직접 검토합니다.">
+<link rel="canonical" href="https://hmintax.com/">
+<meta property="og:url" content="https://hmintax.com/">
+<meta property="og:image" content="https://hmintax.com/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="세무회계 해민 대표세무사 백민희">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>
+/* Layout: 한 장짜리 사무소 소개. 따뜻한 흰 바탕 위에 로고 청록과 꿀색을 포인트로, 둥근 아치 사진과 부드러운 면으로 구획한다 */
+:root {
+  --bg: #FCFAF6;
+  --surface: #FFFFFF;
+  --tint: #E9F2F0;
+  --honey-tint: #FBF0DA;
+  --ink: #1D2D2C;
+  --muted: #566866;
+  --line: #DCE6E3;
+  --teal: #195558;
+  --teal-soft: #2C7672;
+  --honey: #D99A2B;
+  --on-teal: #FFFFFF;
+  --shadow: 0 10px 30px rgba(25, 85, 88, 0.08);
+  --font-display: "Gowun Batang", "Noto Serif KR", "Nanum Myeongjo", serif;
+  --font-body: "Gowun Dodum", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  --radius: 18px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F1B1B; --surface: #152625; --tint: #1A3231; --honey-tint: #352B1B;
+    --ink: #E6EFED; --muted: #A2B4B1; --line: #274240; --teal: #8FD1C9; --teal-soft: #74C0B7;
+    --honey: #F0C36A; --on-teal: #0F1B1B; --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F1B1B; --surface: #152625; --tint: #1A3231; --honey-tint: #352B1B;
+  --ink: #E6EFED; --muted: #A2B4B1; --line: #274240; --teal: #8FD1C9; --teal-soft: #74C0B7;
+  --honey: #F0C36A; --on-teal: #0F1B1B; --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+a { color: var(--teal-soft); }
+:focus-visible { outline: 3px solid var(--honey); outline-offset: 3px; border-radius: 6px; }
+
+.wrap {
+  max-width: 1040px;
+  margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.band { padding-block: clamp(48px, 8vw, 88px); }
+.band.tint { background: var(--tint); }
+
+h1, h2, h3 { font-family: var(--font-display); font-weight: 700; line-height: 1.35; text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(1.6rem, 3.6vw, 2.1rem); color: var(--ink); }
+h3 { font-size: 1.2rem; }
+p { margin: 0; }
+.lead { color: var(--muted); margin-top: 10px; max-width: 60ch; }
+.section-head { display: grid; gap: 4px; margin-bottom: clamp(28px, 4vw, 40px); }
+
+/* 머리 */
+.top {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 21; background: var(--bg); }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 10px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); min-width: 0; }
+.brand img { height: 34px; width: auto; display: block; }
+.logo-dark { display: none !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .logo-light { display: none !important; } :root:not([data-theme="light"]) .logo-dark { display: block !important; } }
+:root[data-theme="dark"] .logo-light { display: none !important; }
+:root[data-theme="dark"] .logo-dark { display: block !important; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 20px; border-radius: 999px; font-family: var(--font-body); font-size: 1rem;
+  text-decoration: none; border: 1.5px solid var(--teal); cursor: pointer; line-height: 1.2;
+  transition: transform .15s ease, background-color .15s ease;
+}
+.btn.primary { background: var(--teal); color: var(--on-teal); }
+.btn.ghost { background: transparent; color: var(--teal); }
+.btn:hover { transform: translateY(-1px); }
+.btn.small { padding: 8px 14px; font-size: 0.9rem; }
+
+/* 첫 화면 */
+.hero .wrap { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+.hero-text { min-width: 0; }
+.eyebrow { color: var(--teal-soft); font-size: 0.95rem; letter-spacing: 0.04em; }
+.hero h1 { font-size: clamp(2.1rem, 5.6vw, 3.4rem); margin-top: 10px; }
+.hero h1 em { font-style: normal; color: var(--teal); position: relative; }
+.hero h1 em::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0.08em; height: 0.32em; background: var(--honey-tint); z-index: -1; border-radius: 4px; }
+.hero .lead { font-size: 1.1rem; margin-top: 18px; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.hero-note { margin-top: 16px; color: var(--muted); font-size: 0.95rem; }
+.hero-note b { color: var(--ink); font-weight: 400; font-variant-numeric: tabular-nums; }
+.sns { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 14px 0 0; padding: 0; list-style: none; font-size: 0.95rem; }
+.sns a { display: inline-flex; align-items: center; gap: 6px; color: var(--teal); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 2px; }
+.sns a:hover { border-color: var(--teal); }
+.sns svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+.person { position: relative; justify-self: center; width: min(100%, 340px); }
+.person::before {
+  content: ""; position: absolute; width: 78%; aspect-ratio: 1; border-radius: 50%;
+  background: var(--honey-tint); right: -8%; top: -6%; z-index: 0;
+}
+.arch {
+  position: relative; z-index: 1; border-radius: 999px 999px var(--radius) var(--radius);
+  overflow: hidden; background: #3a3a3a; aspect-ratio: 285 / 400; max-width: 100%; box-shadow: var(--shadow);
+}
+.arch img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.person-card {
+  position: relative; z-index: 2; margin: -36px 16px 0; background: var(--surface);
+  border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; box-shadow: var(--shadow);
+}
+.person-card .name { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; }
+.person-card .name span { font-family: var(--font-body); font-weight: 400; font-size: 0.9rem; color: var(--teal-soft); margin-right: 6px; }
+
+/* 일하는 방식 */
+.principles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.principle {
+  background: var(--surface); border-radius: var(--radius); padding: 24px 22px 22px;
+  border: 1px solid var(--line); display: grid; gap: 10px; align-content: start; min-width: 0;
+}
+.principle .mark { width: 44px; height: 44px; border-radius: 14px; background: var(--honey-tint); display: grid; place-items: center; }
+.principle .mark svg { width: 24px; height: 24px; stroke: var(--teal); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.principle p { color: var(--muted); }
+.principle .note { font-size: 0.92rem; color: var(--teal-soft); }
+
+/* 하는 일 */
+.services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; border-top: 1px solid var(--line); }
+.service { padding: 22px 4px; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 9.5rem 1fr; gap: 16px; min-width: 0; }
+.service:nth-child(odd) { padding-right: 28px; }
+.service:nth-child(even) { padding-left: 28px; border-left: 1px solid var(--line); }
+.service h3 { color: var(--teal); }
+.service p { color: var(--muted); min-width: 0; }
+.with-whom { margin-top: 22px; color: var(--muted); font-size: 0.98rem; }
+
+/* 상담 절차 */
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; counter-reset: step; list-style: none; padding: 0; margin: 0; }
+.step { position: relative; padding: 22px 18px 20px; background: var(--surface); border-radius: var(--radius); border: 1px solid var(--line); display: grid; gap: 8px; align-content: start; min-width: 0; }
+.step .num { font-family: var(--font-display); font-weight: 700; color: var(--honey); font-size: 1.6rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.step p { color: var(--muted); font-size: 0.98rem; }
+.form-hint { margin-top: 26px; display: grid; gap: 12px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+.chips li { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 0.95rem; }
+.fee { margin-top: 24px; padding: 16px 20px; border-radius: var(--radius); background: var(--honey-tint); display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; justify-content: space-between; }
+
+/* 자주 묻는 질문 */
+.faq { display: grid; gap: 0; border-top: 1px solid var(--line); }
+.qa { padding: 20px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 8px 28px; }
+.qa .q { font-family: var(--font-display); font-weight: 700; }
+.qa .a { color: var(--muted); }
+
+/* 문의와 찾아오시는 길 */
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 22px; align-items: start; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 8px 22px; box-shadow: var(--shadow); min-width: 0; }
+.row { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 14px 0; border-bottom: 1px dashed var(--line); }
+.row:last-child { border-bottom: 0; }
+.row .k { color: var(--muted); font-size: 0.95rem; }
+.row .v { min-width: 0; }
+.row .v.num { font-variant-numeric: tabular-nums; font-size: 1.15rem; letter-spacing: 0.02em; user-select: all; }
+.copy-status { font-size: 0.85rem; color: var(--teal-soft); min-height: 1.2em; }
+.links { display: grid; gap: 10px; }
+.links .btn { justify-content: space-between; width: 100%; }
+.links .btn span.sub { color: inherit; opacity: 0.75; font-size: 0.88rem; }
+
+footer { padding-block: 34px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.92rem; }
+footer .wrap { display: grid; gap: 6px; }
+footer strong { color: var(--ink); font-weight: 400; }
+
+@media (max-width: 860px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .person { order: -1; width: min(78%, 300px); }
+  .principles { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .services { grid-template-columns: 1fr; }
+  .service:nth-child(odd), .service:nth-child(even) { padding-left: 4px; padding-right: 4px; border-left: 0; }
+  .service { grid-template-columns: 1fr; gap: 4px; }
+  .steps { grid-template-columns: 1fr; }
+  .qa { grid-template-columns: 1fr; }
+  .row { grid-template-columns: 1fr auto; }
+  .row .k { grid-column: 1 / -1; }
+}
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:hover { transform: none; } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="세무회계 해민 처음으로">
+      <img class="logo-light" src="data:image/webp;base64,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" alt="세무회계 해민 로고" width="180" height="62">
+      <img class="logo-dark" src="data:image/webp;base64,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" alt="세무회계 해민 로고" width="180" height="62">
+    </a>
+    <a class="btn primary small" href="#contact">상담 문의</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="band hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="eyebrow">의정부 고산동 · 세무회계 해민</p>
+        <h1>고민은 나누고,<br><em>솔루션</em>을 더합니다.</h1>
+        <p class="lead">세무가 어렵고 막막하신 대표님과 편안하게 소통하며 함께 성장하는 파트너가 되겠습니다.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="https://pf.kakao.com/_CWnRG" target="_blank" rel="noopener">카카오톡으로 문의</a>
+          <a class="btn ghost" href="https://talk.naver.com/ct/w43b8y" target="_blank" rel="noopener">네이버톡톡</a>
+          <a class="btn ghost" href="https://forms.gle/bYHpUp7RU89vCtaz8" target="_blank" rel="noopener">상담신청서 쓰기</a>
+        </div>
+        <p class="hero-note">전화 <b>0507-1314-8461</b> · 평일 09:00 ~ 18:00</p>
+        <ul class="sns" aria-label="세무회계 해민 블로그와 SNS">
+          <li><a href="https://blog.naver.com/hmintax" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></svg>네이버 블로그</a></li>
+          <li><a href="https://www.instagram.com/mintax13/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6"/></svg>인스타그램</a></li>
+          <li><a href="https://www.threads.com/@mintax13" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M15.5 8.5v4.25a2.25 2.25 0 0 0 4.5 0V12a8 8 0 1 0-3.2 6.4"/></svg>스레드</a></li>
+        </ul>
+      </div>
+      <figure class="person" style="margin:0">
+        <div class="arch"><img src="data:image/webp;base64,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" alt="세무회계 해민 대표세무사 백민희" width="285" height="450"></div>
+        <figcaption class="person-card">
+          <p class="name"><span>대표세무사</span>백민희</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band tint" aria-labelledby="how">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="how">해민이 일하는 방식</h2>
+        <p class="lead">세무회계 해민을 시작하며 정한 세 가지 원칙입니다.</p>
+      </div>
+      <div class="principles">
+        <article class="principle">
+          <div class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M3 19c0-3 2.2-5 5-5s5 2 5 5"/><path d="M13.5 18.5c.3-2.4 1.6-4 3.4-4 2 0 3.6 1.7 3.6 4.5"/></svg></div>
+          <h3>계약 전에, 대표 세무사가 직접 만납니다</h3>
+          <p>신규 계약 전에 대표 세무사가 대표님과 대면 미팅을 합니다. 사업의 구조와 현황, 앞으로의 계획까지 이야기 나누다 보면 장부에 안 잡히는 비용과 적용할 수 있는 절세 포인트가 보입니다.</p>
+          <p class="note">만나는 곳은 사업장이든 사무실이든 편하신 곳으로 정합니다.</p>
+        </article>
+        <article class="principle">
+          <div class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h7M9 16h4"/><path d="M14 18.5l1.5 1.5 3-3"/></svg></div>
+          <h3>신고서는 대표 세무사가 직접 검토하고 서명합니다</h3>
+          <p>자료 입력과 증빙 정리는 담당 직원이 꼼꼼히 돕고, 결산 검토와 신고서 최종 확인, 세금이 왜 그렇게 나왔는지 설명드리는 일은 대표 세무사가 맡습니다.</p>
+        </article>
+        <article class="principle">
+          <div class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M8 14h3M8 17h6"/></svg></div>
+          <h3>세금이 얼마 나올지, 시즌 전에 먼저 알려드립니다</h3>
+          <p>하반기에 가결산을 해서 신고 시즌 전에 예상 세액과 미리 해 둘 수 있는 일을 안내드립니다. 세금이 줄어든다고 약속드리는 게 아니라, 미리 알고 결정하실 수 있게 돕는 것이 세무사의 일이라고 생각합니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="work">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="work">함께하는 일</h2>
+        <p class="lead">창업부터 성장, 절세, 그리고 승계까지.<br>사업의 모든 순간을 함께 고민하겠습니다.</p>
+      </div>
+      <div class="services">
+        <div class="service"><h3>법인·개인 기장</h3><p>매출이 들어오는 경로, 사업장 공간 쓰임, 함께 일하는 분의 급여와 4대보험 처리를 확인해 장부 방향을 잡습니다.</p></div>
+        <div class="service"><h3>법인 전환</h3><p>매출이 커지면 이어지는 성실신고, 법인 전환, 대표 급여와 퇴직금 설계까지 함께 봅니다.</p></div>
+        <div class="service"><h3>상속과 증여</h3><p>자산을 어떻게 넘길지 자료를 미리 검토하며, 결정이 큰 일인 만큼 마주 앉아 함께 준비합니다.</p></div>
+        <div class="service"><h3>가업상속·가족법인</h3><p>우리 가족의 자산을 지키고 함께 키워가는 일에 동반자가 되어 드립니다.</p></div>
+      </div>
+      <p class="with-whom">전국의 개인사업자와 법인, 상속·증여를 고민하시는 자산가 분들과 함께합니다.</p>
+    </div>
+  </section>
+
+  <section class="band tint" aria-labelledby="flow">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="flow">상담은 이렇게 진행됩니다</h2>
+        <p class="lead">신청서 한 장이 있으면 상담 시간을 상황 파악이 아니라 답변에 온전히 쓸 수 있습니다.</p>
+      </div>
+      <ol class="steps">
+        <li class="step"><span class="num">1</span><h3>상담신청서 접수</h3><p>신청서에 지금 상황을 적어 주세요.</p></li>
+        <li class="step"><span class="num">2</span><h3>확인 후 연락</h3><p>대표 세무사가 신청서를 확인한 뒤 먼저 연락드리고, 상담 방식을 함께 정합니다.</p></li>
+        <li class="step"><span class="num">3</span><h3>문자·전화·대면 상담</h3><p>답이 정해진 질문은 문자로, 방향을 잡을 땐 전화로, 법인 전환이나 상속처럼 결정이 큰 일은 마주 앉아 이야기합니다.</p></li>
+        <li class="step"><span class="num">4</span><h3>결정은 대표님 몫</h3><p>상담만 받고 계약하지 않으셔도 괜찮습니다. 대면 상담 뒤 기장 계약으로 이어지면 상담료는 수임료에 충당됩니다.</p></li>
+      </ol>
+      <div class="form-hint">
+        <p>신청서에 적어 주시면 좋은 다섯 가지</p>
+        <ul class="chips">
+          <li>사업 형태</li><li>업종과 개업 시기</li><li>연 매출 규모(대략)</li><li>지금 기장을 맡기고 있는지</li><li>가장 궁금한 것</li>
+        </ul>
+      </div>
+      <div class="fee">
+        <p>상담료와 절차는 블로그에 미리 공개해 두었습니다.</p>
+        <a class="btn ghost small" href="https://blog.naver.com/hmintax/224391888302" target="_blank" rel="noopener">상담료·상담 절차 안내 보기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="faq">자주 묻는 질문</h2>
+      </div>
+      <div class="faq">
+        <div class="qa"><p class="q">지금 다른 사무실에 기장을 맡기고 있는데 상담받아도 되나요?</p><p class="a">가능합니다. 여러 의견을 들어 보는 것은 결정에 도움이 됩니다.</p></div>
+        <div class="qa"><p class="q">상담에서 말씀드린 내용이 밖으로 나가지는 않나요?</p><p class="a">세무사는 직무상 알게 된 사실에 대해 비밀유지 의무를 집니다. 계약 전 상담 단계에서 알려 주신 내용도 똑같이 보호됩니다.</p></div>
+        <div class="qa"><p class="q">상담 전에 준비할 자료가 있나요?</p><p class="a">사업자등록증, 최근 종합소득세나 법인세 신고서, 최근 부가가치세 신고서, 급여대장이나 4대보험 자료, 고민 중인 일과 관련된 계약서가 있으면 좋습니다. 준비가 어려우시면 없는 대로 진행합니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band tint" id="contact" aria-labelledby="reach">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="reach">문의와 찾아오시는 길</h2>
+        <p class="lead">톡에 "홈페이지 보고 연락드렸습니다" 한 줄만 남겨 주셔도 됩니다.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="card">
+          <div class="row">
+            <span class="k">전화</span>
+            <span class="v num" id="phone">0507-1314-8461</span>
+            <button class="btn ghost small" type="button" id="copy-phone" data-copy="0507-1314-8461" data-target="phone">번호 복사</button>
+          </div>
+          <div class="row">
+            <span class="k">톡 상담</span>
+            <span class="v">네이버톡톡·카카오톡 채널 <b style="font-weight:400">@세무회계해민</b></span>
+            <span></span>
+          </div>
+          <div class="row">
+            <span class="k">주소</span>
+            <span class="v" id="addr">경기도 의정부시 문충로 92 (고산동) 고산법조타워 903호</span>
+            <button class="btn ghost small" type="button" id="copy-addr" data-copy="경기도 의정부시 문충로 92 (고산동) 고산법조타워 903호" data-target="addr">주소 복사</button>
+          </div>
+          <div class="row">
+            <span class="k">운영시간</span>
+            <span class="v">평일 09:00 ~ 18:00</span>
+            <span></span>
+          </div>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        </div>
+        <div class="links">
+          <a class="btn primary" href="https://pf.kakao.com/_CWnRG" target="_blank" rel="noopener">카카오톡 채널 <span class="sub">열기 ↗</span></a>
+          <a class="btn ghost" href="https://talk.naver.com/ct/w43b8y" target="_blank" rel="noopener">네이버톡톡 <span class="sub">열기 ↗</span></a>
+          <a class="btn ghost" href="https://forms.gle/bYHpUp7RU89vCtaz8" target="_blank" rel="noopener">상담신청서 <span class="sub">구글 양식 ↗</span></a>
+          <a class="btn ghost" href="https://booking.naver.com/booking/6/bizes/953795" target="_blank" rel="noopener">네이버 예약 <span class="sub">열기 ↗</span></a>
+          <a class="btn ghost" href="https://m.place.naver.com/place/1196370229/home" target="_blank" rel="noopener">네이버 지도에서 보기 <span class="sub">↗</span></a>
+          <a class="btn ghost" href="https://blog.naver.com/hmintax" target="_blank" rel="noopener">세무 정보 블로그 <span class="sub">↗</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>세무회계 해민</strong> · 대표세무사 백민희</p>
+    <p>경기도 의정부시 문충로 92 (고산동) 고산법조타워 903호 · 0507-1314-8461 · 평일 09:00 ~ 18:00</p>
+    <p>2013년 세무사 시험 합격 · 대기업 재무·세무팀장, 대형 세무법인을 거쳐 세무회계 해민 설립</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var status = document.getElementById('copy-status');
+  function selectText(el) {
+    try {
+      var r = document.createRange(); r.selectNodeContents(el);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    } catch (e) {}
+  }
+  document.querySelectorAll('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy');
+      var target = document.getElementById(btn.getAttribute('data-target'));
+      var done = function () { status.textContent = '복사했어요: ' + text; };
+      var fallback = function () { selectText(target); status.textContent = '선택해 두었어요. 길게 눌러 복사해 주세요.'; };
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, fallback);
+        } else { fallback(); }
+      } catch (e) { fallback(); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
